@@ -1,0 +1,12 @@
+{
+  "name": "ts-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "execute": "tsc ch3.ts --outfile main.js && node main.js"
+  }
+}
