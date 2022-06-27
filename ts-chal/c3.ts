@@ -7,7 +7,21 @@ type Human = {
   lastName: string;
 };
 
-type GetRequiredInformation<TType> = TType;
+/*
+const getRequiredInformation = <T>(input: T): GetRequiredInformation<T> => {
+  if ((<Animal>(<unknown>input)).name) {
+    return { age: 12 };
+  } else {
+    return { ssn: "asdfasdf" };
+  }
+};
+*/
+
+type GetRequiredInformation<TType> = TType extends Animal
+  ? { age: number }
+  : TType extends Human
+  ? { ssn: string }
+  : never;
 
 export type RequiredInformationForAnimal = GetRequiredInformation<Animal>;
 
