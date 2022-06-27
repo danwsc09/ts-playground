@@ -7,3 +7,6 @@ export const deepEqualCompare = <Arg>(a: Arg, b: Arg): boolean => {
   }
   return a === b;
 };
+
+deepEqualCompare([], []);
+deepEqualCompare("a", "b");
