@@ -1,9 +1,6 @@
 import { String, Union } from "ts-toolbelt";
 
-const query = `/home?a=foo&b=wow`;
-
-// how to type the query string so that we get
-// { a: string, b: string }
+const query = `/home?name=burke&profession=chat-baiter`;
 
 type Query = typeof query;
 
@@ -21,6 +18,6 @@ type QueryParams = {
 }[QueryElements[number]];
 
 const obj: Union.Merge<QueryParams> = {
-  a: "foo",
-  b: "wow",
+  name: "burke",
+  profession: "chat-baiter",
 };
