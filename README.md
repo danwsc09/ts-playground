@@ -1,2 +1,7 @@
 # TypeScript Playground
-타입스크립트 프로그래밍 책을 보면서 학습하는 리포입니다.
+
+## Programming TypeScript
+`prog-ts` contains code for following along the Programming TypeScript book from O'Reilly.
+
+## TypeScript Challenge
+`ts-chal` contains code for challenges from [this youtube video](https://www.youtube.com/watch?v=hBk4nV7q6-w).

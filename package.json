@@ -8,5 +8,9 @@
   },
   "scripts": {
     "execute": "tsc ch3.ts --outfile main.js && node main.js"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.14",
+    "react": "^18.2.0"
   }
 }
