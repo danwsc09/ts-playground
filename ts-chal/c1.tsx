@@ -1,18 +1,18 @@
 import React from "react";
 
 interface TableProps<Titem> {
-  items: { id: string }[];
-  renderItem: (item: { id: string }) => React.ReactNode;
+  items: Titem[];
+  renderItem: (item: Titem) => React.ReactNode;
 }
 
-export const Table = (props: TableProps) => {
+export const Table = <TItem,>(props: TableProps<TItem>) => {
   return null;
 };
 
 export const Component = () => {
   return (
     <Table
-      items={[{ id: "1" }]}
+      items={[{ id: "1", name: "Bandit" }]}
       renderItem={(item) => {
         return null;
       }}
