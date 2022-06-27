@@ -1,6 +1,6 @@
 import React from "react";
 
-interface TableProps<Titem> {
+interface TableProps {
   items: { id: string }[];
   renderItem: (item: { id: string }) => React.ReactNode;
 }
